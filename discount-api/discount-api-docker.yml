@@ -1,0 +1,19 @@
+server:
+  port: 8086
+
+spring:
+  datasource:
+    url: jdbc:postgresql://postgres:5432/shopdb    
+    username: shop
+    password: shop
+  data:
+    redis:
+      host: redis                                
+      port: 6379
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka/   
+  instance:
+    prefer-ip-address: true
